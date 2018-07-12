@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
-
 import java.io.Serializable;
 
+// collect and filter the roles
 public class RolesCollection implements Serializable {
 
     public List<Role> roles;

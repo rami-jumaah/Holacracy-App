@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
-
 import java.io.Serializable;
 
+// collect and filter the circles
 public class CirclesCollection implements Serializable {
 
     public List<Circle> circles;

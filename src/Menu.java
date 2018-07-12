@@ -47,7 +47,7 @@ public class Menu {
         }
     }
 
-
+    // show the main menu
     public void show() {
         System.out.println("What do you want to do?\n");
         System.out.println("Press 1 for showing the current holaservice state");
@@ -76,7 +76,7 @@ public class Menu {
             }
         }
     }
-
+    // choosing 1 to show current entries
     public void showCurrentEntries() {
         List<Circle> allCircles = this.holaService.showCircles();
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nList of all circles: ");
@@ -135,7 +135,7 @@ public class Menu {
         System.out.println("\n");
         this.show();
     }
-
+    // choosing 2 to create new entries
     public void createEntries() {
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat type of entry do you want to create?\n");
         System.out.println("Press 0 for Back");
@@ -223,7 +223,7 @@ public class Menu {
         this.show();
 
     }
-
+    // choosing 3 to edit the entries
     public void editEntries() {
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWhat type of entry do you want to edit?\n");
         System.out.println("Press 0 to go back");

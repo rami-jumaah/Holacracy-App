@@ -1,6 +1,7 @@
 import java.util.List;
 import java.io.Serializable;
 
+// deals with all the clases, brings the data from other classes, manipulate and change the data, then sends the data to Menu to show it
 public class HolaService implements Serializable {
 
     public PersonsCollection persons;
@@ -56,6 +57,7 @@ public class HolaService implements Serializable {
     }
 
     public List<Person> showPersons() {
+
         return this.persons.getAll();
     }
 
@@ -66,9 +68,8 @@ public class HolaService implements Serializable {
 
     }
 
-
-
     public List<Role> showRoles() {
+
         return this.roles.getAll();
     }
 
@@ -152,7 +153,7 @@ public class HolaService implements Serializable {
         }
     }
 
-    public void removeSubcircleFromCircle(String circleName){
+    public void removeSubcircleFromCircle(String subcircleName, String circleName){
         Circle circle = circles.findCircleByName(circleName);
 
         if (circle != null ){

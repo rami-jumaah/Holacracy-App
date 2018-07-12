@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
-
 import java.io.Serializable;
 
+// collect and filter the persons
 public class PersonsCollection implements Serializable {
     public List<Person> persons;
 

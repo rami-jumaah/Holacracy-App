@@ -152,7 +152,7 @@ public class HolaService implements Serializable {
         }
     }
 
-    public void removeSubcircleFromCircle(String subcircleName, String circleName){
+    public void removeSubcircleFromCircle(String circleName){
         Circle circle = circles.findCircleByName(circleName);
 
         if (circle != null ){

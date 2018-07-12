@@ -165,9 +165,6 @@ public class HolaService implements Serializable {
     public List<Circle> showSubcirclesOfACircle(String circleName){
         return this.circles.findCircleByName(circleName).getSubcircles().getAll();
 
-
     }
-
-
 
 }

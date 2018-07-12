@@ -19,7 +19,7 @@ public class Menu {
 
     public void saveHolaService() {
         try {
-            // save holaService
+            // save holaService content to file
             FileOutputStream fos = new FileOutputStream("holaService.txt");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(this.holaService);
@@ -33,7 +33,7 @@ public class Menu {
 
     public void loadHolaService() {
         try {
-            // read object from file
+            // read holaservice objects from file
             FileInputStream fis = new FileInputStream("holaService.txt");
             ObjectInputStream ois = new ObjectInputStream(fis);
             this.holaService = (HolaService) ois.readObject();
